@@ -1,0 +1,89 @@
+
+/* SART COMPONENT */
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'helvetica neue';
+}
+body{
+  background-color: #0d1231;
+  /* color: white; */
+  height: 100svh;
+  overflow: hidden;
+}
+input {
+  width: 100%;
+  padding: 30px;
+}
+
+/* END COMPONENT */
+/* <---------------------------------------------------------------------------------> */
+/* START FORM */
+
+form.city-form{
+  max-width: 600px;
+  margin: 50px auto;
+}
+input.search{
+  background-color: #e8e6e6;
+  border: 10px solid #ccc;
+  text-align: center;
+  outline: 0;
+  font-size: 2rem;
+  padding: 40px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+@media (max-width: 360px){
+  input.search{
+    font-size: .8rem;
+  }
+}
+.suggestions{
+  position: relative;
+  margin: 0;
+}
+.suggestions li{
+  background-color: #edebeb;
+  color: #737171;
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+@media (max-width: 360px){
+  .suggestions li{
+    font-size: .8rem;
+  }
+}
+.suggestions li:nth-of-type(odd){
+  clip-path: polygon(8% 0, 92% 0%, 90% 100%, 10% 100%);
+  border-bottom: 2px solid #ccc;
+}
+.suggestions li:nth-of-type(even){
+  clip-path: polygon(10% 0, 90% 0, 92% 100%, 8% 100%);
+  border-bottom: 2px solid #ccc;
+}
+.h1{
+  background: #ffc600;
+}
+
+
+/* END FORM */
+
+
+/* <---------------------------------------------------------------------------------> */
+
+/* START FUNCTIONS CLASSES */
+/* END FUNCTIONS CLASSES */
