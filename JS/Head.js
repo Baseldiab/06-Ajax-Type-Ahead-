@@ -1,7 +1,9 @@
 // Json cities Files
+const endpoint = 'https://baseldiab.github.io/06-Ajax-Type-Ahead-/Json/eg.json';
 
 const cities = [];
-fetch("../Json/eg.json")
+
+fetch(endpoint)
     .then(blob => blob.json())
     .then(data => cities.push(...data))
 // <------------------------------------------------------------------------------------->
